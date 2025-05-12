@@ -2,9 +2,9 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { CiSearch } from "react-icons/ci";
 import { FaMoon } from "react-icons/fa";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { GoSearch } from "react-icons/go";
 
 const Header = () => {
     const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -16,7 +16,7 @@ const Header = () => {
     return (
         <header style={styles.header}>
             <div style={styles.headerInner}>
-                <div className="logo font-bold" style={styles.logo}>
+                <div className="logo font-semibold" style={styles.logo}>
                     <h1>404 TOWN</h1>
                 </div>
                 <nav style={styles.nav}>
@@ -34,7 +34,7 @@ const Header = () => {
                             onMouseOut={() => setHoveredIndex(null)}
                             style={{ color: getIconColor(0), cursor: 'pointer' }}
                         >
-                            <CiSearch />
+                            <GoSearch />
                         </li>
                         <li
                             onMouseOver={() => setHoveredIndex(1)}
@@ -90,7 +90,7 @@ const styles = {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        gap: '30px'
+        gap: '50px'
     },
     gnb: {
         fontSize: '18px',

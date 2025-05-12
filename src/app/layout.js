@@ -1,5 +1,6 @@
 import './globals.css';
 import Header from '@/components/header';
+import Footer from '@/components/footer';
 
 export const metadata = {
   title: '404 town',
@@ -11,6 +12,7 @@ export default function RootLayout({children}) {
     <html lang='ko'>
       <body style={{fontFamily: "Freesentation"}}>
         <Header/>
+        <Footer/>
       </body>
     </html>
   )
