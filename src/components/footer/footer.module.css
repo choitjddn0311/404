@@ -1,0 +1,33 @@
+.footer {
+    width: 100%;
+    height: 100px;
+    background: #111;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footerTop {
+    width: 1400px;
+    height: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ftMenu {
+    display: flex;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.footerBottom {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
